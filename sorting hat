@@ -1,0 +1,209 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int gryffindor, hufflepuff, ravenclaw, slytherin;
+int answer1, answer2, answer3, answer4;
+
+cout << "=======The Sorting Hat Quiz=======\n";
+
+cout << "Q1) When I'm dead, I want people to remember me as: \n";
+cout << "1. Good\n";
+cout << "2. Great\n";
+cout << "3. Wise\n";
+cout << "4. Bold\n";
+
+cout << "My selection is: ";
+cin >> answer1;
+cout << "\n";
+
+if (answer1 == 1){
+
+  hufflepuff++;
+}
+
+else if (answer1 == 2){
+
+  slytherin++;
+}
+
+else if (answer1 == 3){
+
+  ravenclaw++;
+}
+
+else if (answer1 == 4){
+
+  gryffindor++;
+}
+
+else {
+
+  cout << "Invalid input\n";
+}
+
+cout << "Q2) Dawn or Dusk?\n";
+cout << "1. Dawn\n";
+cout << "2. Dusk\n";
+
+cout << "My selection is: ";
+cin >> answer2;
+cout << "\n";
+
+if (answer2 == 1){
+  gryffindor++;
+  ravenclaw++;
+}
+
+else if (answer2 == 2){
+  hufflepuff++;
+  slytherin++;
+
+}
+
+else {
+
+  cout << "Invalid input\n";
+}
+
+cout << "Q3) What kind of instrument most pleases your ear?\n";
+cout << "1. Violin\n";
+cout << "2. Trumpet\n";
+cout << "3. Piano\n";
+cout << "4. Drums\n";
+
+cout << "My selection is: ";
+cin >> answer3;
+cout << "\n";
+
+if (answer3 == 1){
+
+  slytherin++;
+
+}
+
+else if (answer3 == 2){
+
+  hufflepuff++;
+
+}
+
+else if (answer3 == 3) {
+
+  ravenclaw++;
+
+}
+
+else if (answer3 == 4){
+
+  gryffindor++;
+
+}
+
+else{
+
+  cout << "Invalid input\n";
+
+}
+
+
+cout << "Q4) Which road tempts you the most?\n";
+cout << "1. Wide, sunny grassy lane\n";
+cout << "2. Narrow, dark, lantern-lit alley\n";
+cout << "3. Twisting, leaf-strewn path through the woods\n";
+cout << "4. Cobble-lined streets\n";
+
+cout << "My selection is: ";
+cin >> answer4;
+cout << "\n";
+
+if (answer4 == 1){
+
+  hufflepuff++;
+
+}
+
+else if (answer4 == 2){
+
+  slytherin++;
+
+}
+
+else if (answer4 == 3){
+
+  gryffindor++;
+
+}
+
+else if (answer4 == 4){
+
+  ravenclaw++;
+
+}
+
+else{
+
+  cout << "Invalid input\n";
+
+}
+
+string house;
+int max;
+
+if (gryffindor > max) {
+
+  max = gryffindor;
+  house = "Gryffindor";
+
+}
+
+if (hufflepuff > max){
+
+  max = hufflepuff;
+  house = "Hufflepuff";
+
+}
+
+if (ravenclaw > max){
+
+  max = ravenclaw;
+  house = "Ravenclaw";
+
+}
+
+if (slytherin > max){
+
+  max = slytherin;
+  house = "Slytherin";
+
+}
+
+cout << "Your house is " << house << "!\n";
+
+if (max == slytherin){
+
+  cout << "You'll make your real friends, those cunning folk use any means, to achieve their ends.\n";
+
+}
+
+if (max == gryffindor){
+
+  cout << "You might belong in Gryffindor, where dwell the brave at heart, their daring, nerve, and chivalry set Gryffindors apart.\n";
+
+}
+
+if (max == hufflepuff){
+
+  cout << "You might belong in Hufflepuff, where they are just and loyal. Those patient Hufflepuffs are true, and unafraid of toil.\n";
+
+}
+
+if (max == ravenclaw){
+
+  cout << "Wit beyond measure is man's greatest treasure.\n";
+
+}
+
+
+}
