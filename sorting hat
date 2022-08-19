@@ -1,209 +1,214 @@
 #include <iostream>
+
 using namespace std;
 
 int main(){
 
-int gryffindor, hufflepuff, ravenclaw, slytherin;
-int answer1, answer2, answer3, answer4;
+  int gryffindor, hufflepuff, ravenclaw, slytherin = 0;
+  int answer1, answer2, answer3, answer4, answer5;
 
-cout << "=======The Sorting Hat Quiz=======\n";
+  cout << "==================================\n";
+  cout << "=      The Sorting Hat Quiz      =\n";
+  cout << "==================================\n";
 
-cout << "Q1) When I'm dead, I want people to remember me as: \n";
-cout << "1. Good\n";
-cout << "2. Great\n";
-cout << "3. Wise\n";
-cout << "4. Bold\n";
+  cout << "Q1.) When I'm dead, I want people to remember me as: \n";
+  cout << "1. Good\n";
+  cout << "2. Great\n";
+  cout << "3. Wise\n";
+  cout << "4. Bold\n";
 
-cout << "My selection is: ";
-cin >> answer1;
-cout << "\n";
+  cin >> answer1;
 
-if (answer1 == 1){
+if (answer1 == 1) {
 
   hufflepuff++;
 }
 
-else if (answer1 == 2){
+else if (answer1 == 2) {
 
   slytherin++;
 }
 
-else if (answer1 == 3){
+else if (answer1 == 3) {
 
   ravenclaw++;
 }
 
-else if (answer1 == 4){
+else if (answer1 == 4) {
 
   gryffindor++;
 }
 
 else {
 
-  cout << "Invalid input\n";
+  cout << "Invalid Entry\n";
 }
 
-cout << "Q2) Dawn or Dusk?\n";
+cout << "Q2.) Dawn or Dusk?\n";
 cout << "1. Dawn\n";
 cout << "2. Dusk\n";
 
-cout << "My selection is: ";
 cin >> answer2;
-cout << "\n";
 
 if (answer2 == 1){
+
   gryffindor++;
   ravenclaw++;
 }
 
 else if (answer2 == 2){
+
   hufflepuff++;
   slytherin++;
-
 }
 
 else {
 
-  cout << "Invalid input\n";
+  cout << "Invalid Entry\n";
 }
 
-cout << "Q3) What kind of instrument most pleases your ear?\n";
+cout << "Q3.) What kind of instrument pleases your ear?\n";
 cout << "1. Violin\n";
 cout << "2. Trumpet\n";
 cout << "3. Piano\n";
 cout << "4. Drums\n";
 
-cout << "My selection is: ";
 cin >> answer3;
-cout << "\n";
 
 if (answer3 == 1){
 
   slytherin++;
-
 }
 
-else if (answer3 == 2){
+else if (answer3 == 2) {
 
   hufflepuff++;
-
 }
 
 else if (answer3 == 3) {
 
   ravenclaw++;
-
 }
 
-else if (answer3 == 4){
+else if (answer3 == 4) {
 
   gryffindor++;
-
 }
 
-else{
+else {
 
-  cout << "Invalid input\n";
-
+  cout << "Invalid Entry\n";
 }
 
+cout << "Q4.) Which road tempts you the most?\n";
+cout << "1. A Wide, Sunny Grassy Lane\n";
+cout << "2. A Narrow, Dark, Lantern-lit Alley\n";
+cout << "3. A Twisting, Leaf-strewn Path through the Woods\n";
+cout << "4. A Cobble Street Lined with Ancient Buildings\n";
 
-cout << "Q4) Which road tempts you the most?\n";
-cout << "1. Wide, sunny grassy lane\n";
-cout << "2. Narrow, dark, lantern-lit alley\n";
-cout << "3. Twisting, leaf-strewn path through the woods\n";
-cout << "4. Cobble-lined streets\n";
-
-cout << "My selection is: ";
 cin >> answer4;
-cout << "\n";
 
-if (answer4 == 1){
+if (answer4 == 1) {
 
   hufflepuff++;
-
 }
 
-else if (answer4 == 2){
+else if (answer4 == 2) {
 
   slytherin++;
-
 }
 
 else if (answer4 == 3){
 
   gryffindor++;
-
 }
 
-else if (answer4 == 4){
+else if (answer4 == 4) {
 
   ravenclaw++;
-
 }
 
-else{
+else {
 
-  cout << "Invalid input\n";
-
+  cout << "Invalid Entry\n";
 }
 
+cout << "Q5.) What element do you relate to the most?\n";
+cout << "1. Fire\n";
+cout << "2. Air\n";
+cout << "3. Earth\n";
+cout << "4. Water\n";
+
+cin >> answer5;
+
+if (answer5 == 1){
+
+  gryffindor++;
+}
+
+else if (answer5 == 2) {
+
+  ravenclaw++;
+}
+
+else if (answer5 == 3) {
+
+  hufflepuff++;
+}
+
+else if (answer5 == 4) {
+
+  slytherin++;
+}
+
+else {
+
+  cout << "Invalid entry\n";
+}
+
+int max = 0;
 string house;
-int max;
+string founder;
+string animal;
 
 if (gryffindor > max) {
 
   max = gryffindor;
-  house = "Gryffindor";
-
+  house = "Your House: Gryffindor";
+  founder = "Founded by: Godric Gryffindor";
+  animal = "Animal: Lion";
 }
 
-if (hufflepuff > max){
+if (hufflepuff > max) {
 
   max = hufflepuff;
-  house = "Hufflepuff";
+  house = "Your House: Hufflepuff";
+  founder = "Founded by: Helga Hufflepuff";
+  animal = "Animal: Badger";
 
 }
 
-if (ravenclaw > max){
+if (ravenclaw > max) {
 
   max = ravenclaw;
-  house = "Ravenclaw";
-
+  house = "Your House: Ravenclaw";
+  founder = "Founded by: Rowena Ravenclaw";
+  animal = "Animal: Eagle";
 }
 
-if (slytherin > max){
+if (slytherin > max) {
 
   max = slytherin;
-  house = "Slytherin";
-
+  house = "Your House: Slytherin";
+  founder = "Founded by: Salazar Slytherin";
+  animal = "Animal: Snake";
 }
-
-cout << "Your house is " << house << "!\n";
-
-if (max == slytherin){
-
-  cout << "You'll make your real friends, those cunning folk use any means, to achieve their ends.\n";
-
-}
-
-if (max == gryffindor){
-
-  cout << "You might belong in Gryffindor, where dwell the brave at heart, their daring, nerve, and chivalry set Gryffindors apart.\n";
-
-}
-
-if (max == hufflepuff){
-
-  cout << "You might belong in Hufflepuff, where they are just and loyal. Those patient Hufflepuffs are true, and unafraid of toil.\n";
-
-}
-
-if (max == ravenclaw){
-
-  cout << "Wit beyond measure is man's greatest treasure.\n";
-
-}
+cout << "======================================\n";
+cout << "  \o/    The Results Are In!!!!    \o/\n";
+cout << "======================================\n";
+cout << house << "!\n";
+cout << founder << "\n";
+cout << animal << "\n";
 
 
 }
