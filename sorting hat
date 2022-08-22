@@ -43,10 +43,7 @@ else {
 
   cout << "Invalid Entry\n";
 }
-while(answer1 <= 4){
-    if(cin.get () <= 4);
-    break;
-}
+
 while(answer1 > 4){
 
   cout << "Please select a valid option\n";
@@ -80,11 +77,6 @@ else if (answer2 == 2){
 else {
 
   cout << "Invalid Entry\n";
-}
-
-while(answer2 <= 2){
-    if(cin.get () <= 2);
-    break;
 }
 
 while(answer2 > 2){
@@ -128,11 +120,6 @@ else if (answer3 == 4) {
 else {
 
   cout << "Invalid Entry\n";
-}
-
-while(answer3 <= 4){
-    if(cin.get () <= 4);
-    break;
 }
 
 while(answer3 > 4){
@@ -181,11 +168,6 @@ else {
   cout << "Invalid Entry\n";
 }
 
-while(answer4 <= 4){
-    if(cin.get () <= 4);
-    break;
-}
-
 while(answer4 > 4){
    
    cout << "Please choose a valid input\n";
@@ -230,11 +212,6 @@ else if (answer5 == 4) {
 else {
 
   cout << "Invalid entry\n";
-}
-
-while(answer5 <= 4){
-    if(cin.get () <= 4);
-    break;
 }
 
 while(answer5 > 4){
