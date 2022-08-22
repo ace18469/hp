@@ -130,9 +130,21 @@ else {
   cout << "Invalid Entry\n";
 }
 
-while(answer1 <= 4){
+while(answer3 <= 4){
     if(cin.get () <= 4);
     break;
+}
+
+while(answer3 > 4){
+
+  cout << "Please enter a valid option.\n";
+cout << "Q3.) What kind of instrument pleases your ear?\n";
+cout << "1. Violin\n";
+cout << "2. Trumpet\n";
+cout << "3. Piano\n";
+cout << "4. Drums\n";
+
+cin >> answer3;
 }
 
 cout << "Q4.) Which road tempts you the most?\n";
@@ -142,6 +154,7 @@ cout << "3. A Twisting, Leaf-strewn Path through the Woods\n";
 cout << "4. A Cobble Street Lined with Ancient Buildings\n";
 
 cin >> answer4;
+}
 
 if (answer4 == 1) {
 
@@ -168,10 +181,23 @@ else {
   cout << "Invalid Entry\n";
 }
 
-while(answer1 <= 4){
+while(answer4 <= 4){
     if(cin.get () <= 4);
     break;
 }
+
+while(answer4 > 4){
+   
+   cout << "Please choose a valid input'\n";
+cout << "Q4.) Which road tempts you the most?\n";
+cout << "1. A Wide, Sunny Grassy Lane\n";
+cout << "2. A Narrow, Dark, Lantern-lit Alley\n";
+cout << "3. A Twisting, Leaf-strewn Path through the Woods\n";
+cout << "4. A Cobble Street Lined with Ancient Buildings\n";
+
+cin >> answer4;
+
+
 
 cout << "Q5.) What element do you relate to the most?\n";
 cout << "1. Fire\n";
@@ -206,10 +232,23 @@ else {
   cout << "Invalid entry\n";
 }
 
-while(answer1 <= 4){
+while(answer5 <= 4){
     if(cin.get () <= 4);
     break;
 }
+
+while(answer5 > 4){
+
+   cout << "Please enter a valid input.\n";
+cout << "Q5.) What element do you relate to the most?\n";
+cout << "1. Fire\n";
+cout << "2. Air\n";
+cout << "3. Earth\n";
+cout << "4. Water\n";
+
+cin >> answer5;
+}
+
 
 int max = 0;
 string house;
