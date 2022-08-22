@@ -43,6 +43,21 @@ else {
 
   cout << "Invalid Entry\n";
 }
+while(answer1 <= 4){
+    if(cin.get () <= 4);
+    break;
+}
+while(answer1 > 4){
+
+  cout << "Please select a valid option\n";
+  cout << "Q1.) When I'm dead, I want people to remember me as: \n";
+  cout << "1. Good\n";
+  cout << "2. Great\n";
+  cout << "3. Wise\n";
+  cout << "4. Bold\n";
+
+  cin >> answer1;
+}
 
 cout << "Q2.) Dawn or Dusk?\n";
 cout << "1. Dawn\n";
@@ -65,6 +80,21 @@ else if (answer2 == 2){
 else {
 
   cout << "Invalid Entry\n";
+}
+
+while(answer2 <= 2){
+    if(cin.get () <= 2);
+    break;
+}
+
+while(answer2 > 2){
+
+  cout << "Please enter a valid option\n";
+  cout << "Q2.) Dawn or Dusk?\n";
+cout << "1. Dawn\n";
+cout << "2. Dusk\n";
+
+cin >> answer2;
 }
 
 cout << "Q3.) What kind of instrument pleases your ear?\n";
@@ -100,6 +130,11 @@ else {
   cout << "Invalid Entry\n";
 }
 
+while(answer1 <= 4){
+    if(cin.get () <= 4);
+    break;
+}
+
 cout << "Q4.) Which road tempts you the most?\n";
 cout << "1. A Wide, Sunny Grassy Lane\n";
 cout << "2. A Narrow, Dark, Lantern-lit Alley\n";
@@ -133,6 +168,11 @@ else {
   cout << "Invalid Entry\n";
 }
 
+while(answer1 <= 4){
+    if(cin.get () <= 4);
+    break;
+}
+
 cout << "Q5.) What element do you relate to the most?\n";
 cout << "1. Fire\n";
 cout << "2. Air\n";
@@ -164,6 +204,11 @@ else if (answer5 == 4) {
 else {
 
   cout << "Invalid entry\n";
+}
+
+while(answer1 <= 4){
+    if(cin.get () <= 4);
+    break;
 }
 
 int max = 0;
