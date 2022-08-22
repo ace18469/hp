@@ -204,7 +204,7 @@ if (slytherin > max) {
   animal = "Animal: Snake";
 }
 cout << "======================================\n";
-cout << "  \o/    The Results Are In!!!!    \o/\n";
+cout << "         The Results Are In!!!!       \n";
 cout << "======================================\n";
 cout << house << "!\n";
 cout << founder << "\n";
